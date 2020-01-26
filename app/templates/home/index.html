@@ -14,10 +14,15 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-primary" onclick="print()">Submit</button>
     </form>
 
   </div>
 </div>
 
-
+<script>
+function print() {
+  var email = document.getElementById("exampleInputEmail1").value
+  console.log(email)
+}
+</script>
